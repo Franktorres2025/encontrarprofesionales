@@ -163,3 +163,22 @@ a:hover {
 }
 
 
+.ver-mas {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+.ver-mas:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+
+

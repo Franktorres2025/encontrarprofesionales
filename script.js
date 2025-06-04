@@ -78,8 +78,34 @@ function mostrarProfesionales(lista) {
   }
 }
 
-function mostrarDetalle(index) {
-  const p = profesionales[index];
+function mostrarProfesionales(lista) {
+  contenedor.innerHTML = "";
+  lista.forEach((p) => {
+    const tarjeta = document.createElement("div");
+    tarjeta.className = "card";
+
+    tarjeta.innerHTML = `
+      <img src="${p.foto}" alt="${p.nombre}">
+      <h3>${p.nombre}</h3>
+      <p>${p.especialidad} <br><small>${p.ciudad}</small></p>
+      <a href="${p.contacto}" target="_blank"><i class="fab fa-whatsapp"></i> Contactar</a>
+      <button class="ver-mas">Ver más</button>
+    `;
+
+    // Agregamos el evento click al botón "Ver más"
+    tarjeta.querySelector(".ver-mas").addEventListener("click", () => {
+      mostrarDetalle(p); // Pasamos el objeto profesional directamente
+    });
+
+    contenedor.appendChild(tarjeta);
+  });
+
+  if (lista.length === 0) {
+    contenedor.innerHTML = `<p>No se encontraron profesionales.</p>`;
+  }
+}
+
+function mostrarDetalle(p) {
   const detalle = document.getElementById("perfil-detallado");
   detalle.innerHTML = `
     <img src="${p.foto}" alt="${p.nombre}">
@@ -101,6 +127,32 @@ function mostrarDetalle(index) {
   detalle.classList.remove("oculto");
   contenedor.classList.add("oculto");
 }
+
+
+function mostrarDetalle(p) {
+  const detalle = document.getElementById("perfil-detallado");
+  detalle.innerHTML = `
+    <img src="${p.foto}" alt="${p.nombre}">
+    <h2>${p.nombre}</h2>
+    <p><strong>Especialidad:</strong> ${p.especialidad}</p>
+    <p><strong>Ciudad:</strong> ${p.ciudad}</p>
+    <p><strong>Descripción:</strong> ${p.descripcion}</p>
+    <p><strong>Experiencia:</strong> ${p.experiencia}</p>
+    <p><strong>Educación:</strong> ${p.educacion}</p>
+    <p><strong>Idiomas:</strong> ${p.idiomas}</p>
+    <div class="redes">
+      <a href="${p.facebook}" target="_blank">Facebook</a>
+      <a href="${p.instagram}" target="_blank">Instagram</a>
+      <a href="${p.tiktok}" target="_blank">TikTok</a>
+      <a href="${p.contacto}" target="_blank">WhatsApp</a>
+    </div>
+    <a href="#" class="boton-volver" onclick="cerrarDetalle()">← Volver al listado</a>
+  `;
+  detalle.classList.remove("oculto");
+  contenedor.classList.add("oculto");
+}
+
+
 
 function cerrarDetalle() {
   document.getElementById("perfil-detallado").classList.add("oculto");
