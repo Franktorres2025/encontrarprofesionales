@@ -14,10 +14,10 @@ const profesionales = [
     idiomas: "Español, Inglés"
   },
   {
-    nombre: "Lic. Mario Torres",
-    especialidad: "Nutricionista Deportivo",
-    ciudad: "San Lorenzo",
-    foto: "img/mario.jpeg",
+    nombre: "Lic. Josias Cáceres",
+    especialidad: "Psicología Laboral",
+    ciudad: "Ñemby",
+    foto: "img/josias.jpeg",
     contacto: "https://wa.me/595971859221",
     facebook: "https://www.facebook.com/frank.torres.98",
     instagram: "https://instagram.com/mario.nutri",
