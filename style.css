@@ -1,0 +1,165 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background: #1769a3;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  
+}
+
+input#buscador {
+  width: 80%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  /*width: 80%;*/
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.3rem;
+}
+
+.card p {
+  color: #555;
+}
+
+.perfil-detalle {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.perfil-detalle img {
+  /*width: 200px;*/
+  height: 200px;
+  object-fit: cover;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+
+.perfil-detalle h2 {
+  margin-top: 0;
+}
+
+.perfil-detalle p {
+  margin-bottom: 0.7rem;
+}
+
+.redes {
+  margin-top: 1rem;
+}
+
+.redes a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  background: #0077cc;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #ccc;
+  color: black;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .perfil-detalle img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #be6007;
+}
+
+
+.card a {
+ display: inline-block;
+  margin-top: 0.8rem;
+  background: #25D366;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.card a i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.card a:hover {
+  background: #1ebe5d;
+}
+
+
