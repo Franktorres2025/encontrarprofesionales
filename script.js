@@ -4,8 +4,8 @@ const profesionales = [
     especialidad: "Psicología Clínica",
     ciudad: "Asunción",
     foto: "img/ana.jpg",
-    contacto: "https://wa.me/595991234567",
-    facebook: "https://www.facebook.com/profile.php?id=61570571649347",
+    contacto: "https://wa.me/595972409087",
+    facebook: "https://www.facebook.com/frank.torres.98",
     instagram: "https://www.instagram.com/detodo_unpocopy25",
     tiktok: "https://tiktok.com/@anagomezpsico",
     descripcion: "Psicóloga con más de 10 años de experiencia en terapias individuales, familiares y de pareja.",
@@ -18,8 +18,8 @@ const profesionales = [
     especialidad: "Nutricionista Deportivo",
     ciudad: "San Lorenzo",
     foto: "img/mario.jpeg",
-    contacto: "https://wa.me/595994567890",
-    facebook: "https://facebook.com/mariotorresnutri",
+    contacto: "https://wa.me/595971859221",
+    facebook: "https://www.facebook.com/frank.torres.98",
     instagram: "https://instagram.com/mario.nutri",
     tiktok: "https://tiktok.com/@nutritorres",
     descripcion: "Especialista en nutrición deportiva y control de peso. Atención personalizada.",
@@ -32,8 +32,8 @@ const profesionales = [
     especialidad: "Psicopedagoga",
     ciudad: "Capiatá",
     foto: "img/carolina.jpeg",
-    contacto: "https://wa.me/595992112233",
-    facebook: "https://facebook.com/carolinapsico",
+    contacto: "https://wa.me/595972409087",
+    facebook: "https://www.facebook.com/frank.torres.98",
     instagram: "https://instagram.com/carodps",
     tiktok: "https://tiktok.com/@carodps",
     descripcion: "Psicopedagoga con experiencia en dificultades de aprendizaje y desarrollo cognitivo.",
@@ -46,8 +46,8 @@ const profesionales = [
     especialidad: "Pediagra",
     ciudad: "Fernando de la Mora",
     foto: "img/pablo.jpg",
-    contacto: "https://wa.me/595992112233",
-    facebook: "https://facebook.com/carolinapsico",
+    contacto: "https://wa.me/595972409087",
+    facebook: "https://www.facebook.com/frank.torres.98",
     instagram: "https://instagram.com/carodps",
     tiktok: "https://tiktok.com/@carodps",
     descripcion: "Psicopedagoga con experiencia en dificultades de aprendizaje y desarrollo cognitivo.",
@@ -68,7 +68,7 @@ function mostrarProfesionales(lista) {
         <img src="${p.foto}" alt="${p.nombre}">
         <h3>${p.nombre}</h3>
         <p>${p.especialidad} <br><small>${p.ciudad}</small></p>
-        <a href="https://wa.me/595987123456" target="_blank"><i class="fab fa-whatsapp"></i> Contactar</a>
+        <a href="${p.contacto}" target="_blank"><i class="fab fa-whatsapp"></i> Contactar</a>
       </div>
     `;
   });
