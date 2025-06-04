@@ -43,7 +43,7 @@ const profesionales = [
   },
 {
     nombre: "Lic. Pablo Granados",
-    especialidad: "Pediagra",
+    especialidad: "Pediatra",
     ciudad: "Fernando de la Mora",
     foto: "img/pablo.jpg",
     contacto: "https://wa.me/595972409087",
